@@ -1,0 +1,81 @@
+/** Import Google Fonts **/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;1,400;1,600&display=swap');
+
+/** Set global variables **/
+:root{
+    --orange:#DB9D00; /* Define variables for: orange color */
+    --dark-color:#EDA800; /* darker color (orange) */
+    --black:#444; /* black color */
+    --light-color:#666; /* lighter color (gray)*/
+    --border:0.1rem solid rgba(0,0,0,0.1); /* border*/
+    --border-hover:0.1rem solid var(--black); /* hover border*/
+    --box-shadow:0 0.5rem 1rem rgba(0,0,0,0.1); /*  box shadow*/
+}
+/** Reset all elements to default styles **/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* Set the font family to Poppins and sans-serif */
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear; /* Set a transition for all properties with a duration of 0.2s */
+    transition: width none; /* Disable transition for width property */
+}
+
+/** Set base font size and other HTML styles **/
+html{
+    font-size: 62.5%;
+    overflow-X: hidden; /* Hide the horizontal scrollbar*/
+    scroll-padding-top: 5rem; /* Add padding top to smooth scroll to avoid header overlapping */
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem; /* Set the width of the scrollbar */
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--black);
+}
+
+/*-------------------------------------- Top header -----------------------------*/
+
+.header .header-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 9%;
+    background: #fff;
+}
+
+
+.header .header-1 .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black); 
+}
+
+.header .header-1 .logo img{
+    height: 120px;
+    width: 120px;
+
+}
+
+.header .header-1 .search-form{
+    width: 50rem;
+    height: 5rem;
+    border: var(--border); /* Set the border to the value of the variable --border */
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
