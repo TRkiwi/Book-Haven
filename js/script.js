@@ -10,6 +10,6 @@ document.querySelector("#login-btn").onclick = () =>{
 // Add event listener to the close button with ID "close-login-btn"
 document.querySelector("#close-login-btn").onclick = () =>{
 
-     // Remove the "active" class from the login form container element
+     // Removes the "active" class from the login form container element
     loginForm.classList.remove("active");
 }
