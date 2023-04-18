@@ -146,3 +146,138 @@ html::-webkit-scrollbar-thumb{
     z-index: 1000;
 }
 
+/*------------------------  bottom-navbar -----------------------------------*/
+
+
+.bottom-navbar{
+    text-align: center; /* Center aligns the text within the element */
+    background: var(--orange); /* Sets the background color to orange */
+    /* Fixes the position of the element to the bottom of the viewport */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: none; /* Hides the element by default */
+}
+
+.bottom-navbar a{
+    font-size: 3rem;
+    padding: 2rem;
+    color: #fff;
+}
+/* Styles for links within the bottom navigation bar when hovered over */
+.bottom-navbar a:hover{
+    background-color: var(--dark-color);/* Sets the background color to a darker color */
+}
+
+/* login-form */
+
+
+.login-form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.9); /* Sets the background color with 90% opacity */
+    position: fixed;
+    top: 0;
+    right:-105%;
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+}
+
+.login-form-container.active{
+    right: 0;
+}
+
+.login-form-container form{
+    background: #fff;
+    border: var(--border);  /* Applies border styles using a custom CSS variable named "--border" for the border of the form*/
+    width: 40rem;
+    padding: 2rem;
+    box-shadow: var(--box-shadow); /* Applies a box shadow using a custom CSS variable named "--box-shadow" that creates a box shadow */
+    border-radius: .5rem;
+    margin: 2rem;
+}
+
+.login-form-container form h3{
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.login-form-container form span{
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.login-form-container form .box{
+    width: 100%;
+    margin: 0.7rem 0;
+    font-size: 1.6rem;
+    border: var(--border);
+    border-radius: 0.5rem;
+    padding: 1rem 1.2rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+
+.login-form-container form .check-box{
+    display: flex;  /* Uses flexbox to align child elements horizontally with a gap */
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0;
+}
+
+.login-form-container form .check-box label{
+    font-size: 1.5rem;
+    color: var(--light-color); 
+    cursor: pointer; /* Sets cursor to pointer when hovering over the checkbox label */
+}
+
+.login-form-container form .btn{
+    text-align: center;
+    width: 100%;
+    margin: 1.5rem 0; /* Sets margin on top and bottom of the button */
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    background: var(--orange);
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+    
+}
+ /* Styles for button hover effect */
+.btn:hover{
+    background-color: var(--dark-color); /* Sets background color to a darker color on hover */
+}
+
+.login-form-container form p{
+    padding-top: 0.8rem;
+    color: var(--light-color); /* Sets the font color using a CSS variable to a lighter color */
+    font-size: 1.5rem;
+}
+
+.login-form-container form p a{
+    text-decoration: underline; /* Sets underline decoration for anchor tags */
+    color: var(--orange);
+}
+
+.login-form-container #close-login-btn{
+    position: absolute; /* Sets position to absolute for absolute positioning */
+    top: 1.5rem; /* Sets top offset from the parent element */
+    right: 2.5rem; /* Sets right offset from the parent element */
+    font-size: 5rem;
+    cursor: pointer;
+
+}

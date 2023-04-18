@@ -58,8 +58,6 @@
 
     <!--------- header section ends ------------>
 
-<!--DON'T FORGET THE LOGIN-FORM!!!!-->
-
     <!-------- bottom navbar start ----------->
 
     <div class="bottom-navbar">
@@ -71,7 +69,36 @@
 
     <!-------- bottom navbar ends ----------->
 
-    <section class="home" id="home">
+    <!-------- login form start ------------->
+
+   
+    <div class="login-form-container">
+
+        <div id="close-login-btn" class="fas fa-times"></div>
+
+        <form action="">
+            <h3>sign in</h3>
+            <span>email</span>
+            <input type="email" name="" class="box"  placeholder="Enter your email...">
+            <span>password</span>
+            <input type="password" name="" class="box"  placeholder="Enter your password...">
+
+            <div class="check-box">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <input type="submit" value="sign in" class="btn">
+            <p>Forgot password ? <a href="">Click here!</a></p>
+            <p>Don't have an account ? <a href="">Create one!</a></p>
+        </form>
+    </div>
+
+    <!-------- login form ends ----------->
+
+
+    <!-------- home section start ----------->
+
+      <section class="home" id="home">
 
         <div class="row">
 
@@ -84,7 +111,7 @@
             <div class="swiper books-list" >
 
                 <div class="swiper-wrapper">
-                    <a href="" class="swiper-slide"><img src="./image/book-1.png" alt=""></a> <!--pictures that are displayed on the welcoming page-->
+                    <a href="" class="swiper-slide"><img src="./image/book-1.png" alt=""></a>
                     <a href="" class="swiper-slide"><img src="./image/book5.png" alt=""></a>
                     
                     
@@ -100,3 +127,73 @@
       </section>
 
     <!-------- home section ends  ----------->
+
+    <!-------- footer section start  ----------->
+
+          <section class="footer">
+
+                <div class="box-container">
+
+    <!-------- news letter section start  ----------->
+
+                    <div class="box">
+                        <h3>newsletter</h3>
+            
+                            <form action="">
+                    
+                                <h3>subcribe for latest update</h3>
+                                <input type="email" name="" placeholder="enter your email" class="box">
+                                <input type="submit" value="subcribe" class="btn">
+                            </form>
+                    
+                    </div>
+
+    <!-------- news letter section ends  ----------->
+                    <div class="box">
+                        <h3>quick links</h3>
+                        <a href="home.html"><i class="fas fa-arrow-right"></i>home</a>
+                        <a href="gallery.html"><i class="fas fa-arrow-right"></i>gallery</a>
+                        <a href="aboutus.html"><i class="fas fa-arrow-right"></i>about us</a>
+                      
+                    </div>
+
+                    <div class="box">
+                        <h3>extra links</h3>
+                        <a href=""><i class="fas fa-arrow-right"></i>account info</a>
+                        <a href=""><i class="fas fa-arrow-right"></i>ordered items</a>
+                        <a href=""><i class="fas fa-arrow-right"></i>privacy policy</a>
+                        <a href=""><i class="fas fa-arrow-right"></i>payment method</a>
+                        <a href=""><i class="fas fa-arrow-right"></i>our services</a>
+                    </div>
+
+
+                    <div class="box">
+                        <h3>contact info</h3>
+                        <a href=""><i class="fas fa-phone"></i>+123-356-546</a>
+                        <a href=""><i class="fas fa-map-marker-alt"></i>Location</a>
+                        <a href=""><i class="fas fa-envelope"></i>bookhaven@gmail.com</a>
+                        <img src="./image/worldmap.png" alt="" class="map">
+                    </div>
+                </div>
+
+                <div class="share">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+
+                <div class="credit">create by <span>book haven</span> | all rights reserved</div>
+
+          </section>
+
+    <!-------- footer section ends  ----------->
+     
+
+    <!------- customer script link ------------>
+
+     <script src="./js/script.js"></script>
+    
+</body>
+</html>
