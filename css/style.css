@@ -302,12 +302,12 @@ section{
  
 
 .home .row .content{
-    flex: 1 1 42rem;
+    flex: 1 1 42rem; /* Sets the flex properties for the content */
 }
 
 .home .row .content h3{
     color: var(--black);
-    font-size: 4.5rem;
+    font-size: 4.5rem;  /* Sets the font size of the heading */
 }
 .home .row .content h3 strong{
     font-weight: bolder;
@@ -317,29 +317,29 @@ section{
 
 .home .row .content p{
     color: var(--light-color);
-    font-size: 1.4rem;
+    font-size: 1.4rem; /* Sets the font size of the paragraph */
     line-height: 2;
     padding: 1rem 0;
 }
 
 .home .row .books-list{
-    flex: 1 1 42rem;
+    flex: 1 1 42rem; /* Sets the flex properties for the books list */
     margin-top: 2rem;
     text-align: center;
 
 }
 
 .home .row .books-list a img{
-    height: 25rem;
+    height: 25rem; /* Sets the height of the book images */
 }
 
 .home .row .books-list a:hover img{
-    transform: scale(0.9);
+    transform: scale(0.9); /* Shrinks the size of the book image on hover */
 }
 
 .home .row .books-list .stand{
-    width: 100%;
-    margin-top: -2rem;
+    width: 100%; /* Sets the width of the stand */
+    margin-top: -2rem; /* Adds negative margin to the top of the stand */
 }
 
 
