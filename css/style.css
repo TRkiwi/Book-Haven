@@ -281,3 +281,62 @@ html::-webkit-scrollbar-thumb{
     cursor: pointer;
 
 }
+
+/*------------------------------- home section ------------------------------------*/
+
+section{
+    padding: 5rem 9%;
+}
+.home{
+    background: url(../image/banner-bg.jpg); /*Add this image to the welcoming page*/
+    background-position: center; /*Adjust it's position*/
+    background-size: cover;/*Adjust it's size*/
+}
+
+.home .row{
+    display: flex; /* Uses flexbox to align child elements horizontally with a gap */
+    align-items: center; /*Align the items to the center*/
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.home .row .content{
+    flex: 1 1 42rem;
+}
+
+.home .row .content h3{
+    color: var(--black);
+    font-size: 4.5rem;
+}
+.home .row .content h3 strong{
+    font-weight: bolder;
+    color: #DB9D00;
+    font-size: 4.8rem;
+}
+
+.home .row .content p{
+    color: var(--light-color);
+    font-size: 1.4rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.home .row .books-list{
+    flex: 1 1 42rem;
+    margin-top: 2rem;
+    text-align: center;
+
+}
+
+.home .row .books-list a img{
+    height: 25rem;
+}
+
+.home .row .books-list a:hover img{
+    transform: scale(0.9);
+}
+
+.home .row .books-list .stand{
+    width: 100%;
+    margin-top: -2rem;
+}
