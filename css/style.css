@@ -299,6 +299,7 @@ section{
     flex-wrap: wrap;
     gap: 1.5rem;
 }
+ 
 
 .home .row .content{
     flex: 1 1 42rem;
@@ -339,4 +340,183 @@ section{
 .home .row .books-list .stand{
     width: 100%;
     margin-top: -2rem;
+}
+
+
+
+
+
+/*----------------------------- news letter section start-----------------------------*/
+
+
+form{
+    max-width: 55rem;
+    margin-left: auto;  /* Center the form horizontally */
+    text-align: start;
+}
+
+form h3{
+    font-size: 2.2rem;
+    color: #DB9D00; /* Set the text color to a custom orange color */
+    font-weight: normal;
+}
+
+form .box{
+    width: 70%;
+    margin: 0.7rem 0;  /* Add some margin */
+    padding: 1rem 1.2rem;
+    font-size: 1.5rem;
+    color: var(--black);
+    border-radius: 0.5rem;
+    text-transform: none;
+    border: 1px solid #EDA800;  /* Add a border */
+}
+
+/*--------------------------- footer section ------------------------*/
+
+.footer .box-container{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));  /* Set the column template to repeat columns as needed with a minimum size of 25rem and maximum size of 1fr */
+    padding: 1rem 0;
+    margin-left: 5%; /* Add some margin on the left */
+}
+.footer .box-container .box{
+    width: 100%;
+    padding-left: 20px;
+}
+/* Style for the h3 tag within each box */
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;  /* Display the anchor tag as a block */
+    font-size: 1.4rem;
+    color: var(--light-color);
+    padding: 1rem 1rem;
+
+}
+
+.footer .box-container .box a i{
+    color: var(--orange);
+    padding-right: 0.5rem;
+    
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+
+.footer .box-container .box .map{
+    width: 100%; /* Set the width of the map to 100% */
+}
+
+.footer .share{
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer .share a{
+    height: 8rem;
+    width: 8rem;
+    line-height: 5rem;
+    font-size: 3rem;
+    margin: 0 0 0.3rem;
+    color: var(--light-color); /* Set the text color to a custom light color */
+}
+
+.footer .share a:hover{
+    color: #DB9D00;
+}
+
+.footer .credit{
+    border-top: var(--border); /* Add a border to the top */
+    margin-top: 2rem;
+    padding: 0 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: var(--light-color);
+    text-align: center;
+}
+
+.footer .credit span{
+    color: var(--orange);
+}
+
+
+/*-------------------------- media query --------------------------*/
+
+
+/* Media queries for screens up to 991px */
+@media(max-width:991px){
+    html{
+        font-size: 55%; /* Decrease font size for better mobile experience */
+    }
+    
+    .header .header-1{
+        padding: 2rem; /* Reduce padding for mobile users */
+    }
+    section{
+        padding: 3rem 2rem; /* Reduce padding for better experience for the mobile/phone users */
+    }
+}
+
+@media(max-width:768px){
+    html{
+        scroll-padding-top: 0;  /* Remove padding on scrolling for mobile users */
+    }
+
+    body{
+        padding-bottom: 6rem;
+    }
+
+    .header .header-2{
+        display: none;
+    }
+
+    .header .header-1{
+        box-shadow: var(--box-shadow);
+        position: relative; /* Add shadow and position header element relatively */
+    }
+
+    .header .header-1 .search-form{
+        position: absolute;
+        top: -115%; /* Hide search bar offscreen by default */
+        right: 2rem;
+        width: 90%;
+        box-shadow: var(--box-shadow);
+    }
+
+    .header .header-1 .search-form.active{
+        top: 115%; /* Bring search bar on screen when active */
+    }
+
+    #search-btn{
+        display: inline-block; /* Show search button on small screens */
+    }
+    .home .row .content h3{
+        color: var(--black);
+        font-size: 3.5rem; /* Increase font size for better readability on small screens */
+    }
+
+    .home .row .content{
+       text-align: center; /* Center align content on small screens */
+    }
+    .bottom-navbar{
+        display: inline-block; /* Show bottom navbar on small screens */
+    }
+    form{
+        margin-left: 0;
+        max-width: 100%; /* Remove left margin and make form full width on small screens */
+    }
+}
+
+@media(max-width:450px){
+
+    html{
+        font-size: 50%; /* Further decrease font size, for mobile users experience */
+    }
 }
