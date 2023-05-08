@@ -594,3 +594,50 @@ form .box{
     color: var(--light-color); /* Sets the color of the paragraph within the icons container */
     font-size: 1.4rem;
 }
+
+/*---- review section start ---------*/
+
+.reviews .reviews-container .review-box{
+    border: var(--border); /* Styling the review box with border */
+    padding: 2rem;
+    text-align: center; /* Center aligning the content inside the review box */
+    margin: 1rem 0;
+    width: 400px;
+}
+.reviews-container{
+    display: flex; /* Creating a flex container for the reviews */
+    flex-direction: row; /* Setting the direction of flex items to row */
+    flex-wrap: wrap;  /* Allowing the reviews to wrap to the next line if necessary */
+    justify-content: center; /* Center aligning the reviews horizontally */
+}
+
+.reviews .reviews-container .review-box:hover{
+    border: var(--border-hover); /* Changing the border color when hovering over the review box */
+}
+
+.reviews .reviews-container .review-box img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover; /*Ensures that the image covers the whole space without any effect on the quality*/
+}
+
+.reviews .reviews-container .review-box h3{
+    color: var(--black);
+    font-size: 2.2rem;
+    padding: 1rem 0 ;
+    line-height: 2;
+}
+
+.reviews .reviews-container .review-box p{
+    color: var(--light-color); /* Setting the color of the review text */
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.reviews .reviews-container .review-box .stars i{
+    font-size: 1.7rem;
+    color: var(--orange); /* Setting the color of the star icons */
+}
+
