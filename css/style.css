@@ -520,3 +520,77 @@ form .box{
         font-size: 50%; /* Further decrease font size, for mobile users experience */
     }
 }
+
+/*--------------------------- about us section ------------------------------*/
+
+.about .about-container .about-box{
+    margin: 2rem 0; /* Adds margin to the about box */
+    border: var(--border); /* Sets the border style for the about box */
+}
+
+.about .about-container .about-box:hover{
+    border: var(--border-hover);  /* Sets the border style on hover for the about box */
+}
+
+.about .about-container .about-box .image{
+    height: 25rem;
+    width: 100%;
+    overflow: hidden; /* Hides any overflowing content within the image container */
+}
+
+.about .about-container .about-box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+.about .about-container .about-box:hover .image img{
+    transform: scale(1.1);  /* Scales up the image on hover */
+}
+
+.about .about-container .about-box .content{
+    padding: 1.5rem;  /* Adds padding to the content within the about box */
+}
+
+.about .about-container .about-box .content h3{
+    font-size: 2.2rem;
+    color: var(--black);
+}
+
+.about .about-container .about-box .content p{
+    font-size: 1.4rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+    line-height: 2; /* Sets the line height of the paragraph within the about box */
+}
+
+/*--------------------------- icons-container ----------------------------*/
+
+.icons-container{
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); /* Creates a responsive grid layout */
+}
+
+.icons-container .icons{
+    display: flex;
+    align-items: center; 
+    gap: 0.5rem;
+    justify-content: space-evenly; /* Positions the icons evenly within the container */
+}
+
+.icons-container .icons i{
+    font-size: 3.5rem; 
+    color: var(--orange); /* Sets the color of the icons */
+    padding: 2rem 0;
+}
+
+.icons-container .icons h3{
+    color: var(--black); /* Sets the color of the icons */
+    font-size: 2.2rem;
+    border-bottom: 0.5rem; /* Adds a bottom border to the heading within the icons container */
+}
+
+.icons-container .icons p{
+    color: var(--light-color); /* Sets the color of the paragraph within the icons container */
+    font-size: 1.4rem;
+}
