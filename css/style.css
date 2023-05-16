@@ -686,41 +686,41 @@ form .box{
 /*------------------------- gallery section ------------------------------------*/
 
 .heading{
-    text-align: center;
+    text-align: center; /* Center aligning the text */
     margin-bottom: 2rem;
     position: relative;
 }
 
 .heading::before{
-    content: '';
+    content: ''; /* Adding content before the heading */
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translateY(-50%);
+    transform: translateY(-50%); /* Translating the element vertically by -50% of its height */
     width: 100%;
     height: 0.01rem;
     background: rgba(0,0,0,0.1);
-    z-index: -1;
+    z-index: -1; /* Moving the element behind the heading */
 }
 
 .heading span{
     font-size: 3rem;
     padding: 4rem 2rem;
     color: var(--black);
-    border: var(--border);
+    border: var(--border); /* Adding a border to the span */
     background: #fff;
 }
 .swiper-wrapper{
-    display: flex;
+    display: flex; /* Displaying the elements in a row */
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-wrap: wrap; /* Allowing the elements to wrap to a new line if necessary */
+    justify-content: space-evenly; /* Distributing the elements evenly along the horizontal axis */
 }
 .gallery .gallery-container .gallery-box{
-    width: 25rem;
+    width: 25rem; /* Setting the width of the gallery box */
     margin: 2rem 0;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; /* Hiding any content that overflows the box */
     border: var(--border);
     text-align: center;
 }
@@ -731,7 +731,7 @@ form .box{
 
 .gallery .gallery-container .gallery-box .image{
     padding: 1rem;
-    background:linear-gradient(15deg, #eee 30% , #fff 30.1%);
+    background:linear-gradient(15deg, #eee 30% , #fff 30.1%); /* Setting a linear gradient background */
 }
 
 .gallery .gallery-container .gallery-box .image img{
@@ -739,8 +739,8 @@ form .box{
 }
 
 .gallery .gallery-container .gallery-box:hover .image{
-    transform: translateY(6rem);
-    cursor: pointer;
+    transform: translateY(6rem); /* Applying a vertical translation to the image on hover */
+    cursor: pointer;  /* Changing the cursor to a pointer on hover */
 }
 
 .gallery .gallery-container .gallery-box .icons{
@@ -751,12 +751,12 @@ form .box{
     right: 0;
     background: #ffff;
     z-index: 1;
-    transform: translateY(-100%);
+    transform: translateY(-100%); /* Translating the icons vertically by -100% of their height */
     border: var(--border);
 }
 
 .gallery .gallery-container .gallery-box:hover .icons{
-    transform: translateY(0);
+    transform: translateY(0); /* Moving the icons to their original position on hover */
 }
 
 .gallery .gallery-container .gallery-box .icons a{
@@ -789,5 +789,5 @@ form .box{
 .gallery .gallery-container .gallery-box .content .price span{
     font-size: 1.5rem;
     color: var(--light-color);
-    text-decoration: line-through;
+    text-decoration: line-through; /* Adding a line-through text decoration to the span within the price */
 }

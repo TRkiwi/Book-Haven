@@ -1,5 +1,4 @@
 /*----- login form -------- */
-
 var loginForm = document.querySelector('.login-form-container'); // Select the login form container element
 
 // Add event listener to the login button with ID "login-btn"
