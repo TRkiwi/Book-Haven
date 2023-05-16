@@ -549,7 +549,7 @@ form .box{
 }
 
 .about .about-container .about-box .content{
-    padding: 1.5rem;  /* Adds padding to the content within the about box */
+    padding: 2.5rem;  /* Adds padding to the content within the about box */
 }
 
 .about .about-container .about-box .content h3{
@@ -562,6 +562,7 @@ form .box{
     color: var(--light-color);
     padding: 1rem 0;
     line-height: 2; /* Sets the line height of the paragraph within the about box */
+    
 }
 
 /*--------------------------- icons-container ----------------------------*/
