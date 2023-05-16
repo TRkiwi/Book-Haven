@@ -22,7 +22,7 @@
     text-decoration: none;
     text-transform: capitalize;
     transition: all .2s linear; /* Set a transition for all properties with a duration of 0.2s */
-    transition: width none; /* Disable transition for width property */
+
 }
 
 /** Set base font size and other HTML styles **/
