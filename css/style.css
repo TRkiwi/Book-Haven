@@ -10,6 +10,7 @@
     --border:0.1rem solid rgba(0,0,0,0.1); /* border*/
     --border-hover:0.1rem solid var(--black); /* hover border*/
     --box-shadow:0 0.5rem 1rem rgba(0,0,0,0.1); /*  box shadow*/
+    --border2: 0.1rem solid rgba(192, 192, 192, 0.1); /* Another color of border*/
 }
 /** Reset all elements to default styles **/
 *{
@@ -702,6 +703,7 @@ form .box{
     height: 0.01rem;
     background: rgba(0,0,0,0.1);
     z-index: -1; /* Moving the element behind the heading */
+    border: var(--border2); /* Adding a border to the heading*/
 }
 
 .heading span{
@@ -716,6 +718,7 @@ form .box{
     flex-direction: row;
     flex-wrap: wrap; /* Allowing the elements to wrap to a new line if necessary */
     justify-content: space-evenly; /* Distributing the elements evenly along the horizontal axis */
+    padding: 0.5rem 5%; /*Adds padding, this fixes a problem on Chrome where this section does not display correctly as on FireFox */
 }
 .gallery .gallery-container .gallery-box{
     width: 25rem; /* Setting the width of the gallery box */
